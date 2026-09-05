@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="200"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g clip-path="url(#circle)">
+    <circle cx="200" cy="168" r="76" fill="#1e293b"/>
+    <path d="M72 400 Q 122 232 200 232 Q 278 232 328 400 Z" fill="#1e293b"/>
+    <text x="200" y="360" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="rgba(255,255,255,0.85)" text-anchor="middle" letter-spacing="6">RENZ</text>
+  </g>
+</svg>
