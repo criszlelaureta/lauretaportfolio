@@ -129,18 +129,32 @@ class PortfolioController extends Controller
     {
         return [
             [
+                'title'  => 'Introduction to Modern AI',
+                'issuer' => 'DICT',
+                'date'   => 'October 21, 2026',
+                'file'   => '',
+                'image'  => asset('pdf_cert/cisco.jpeg'),
+            ],
+            [
+                'title'  => 'Understanding Startups & Getting Your Idea Ready for the Philippine Startup Challenge XI',
+                'issuer' => 'DICT',
+                'date'   => 'September 7, 2026',
+                'file'   => '',
+                'image'  => asset('pdf_cert/understang.jpeg'),
+            ],
+            [
+                'title'  => 'Startup Now Cordillera: Exploring Programming, Funding, and Opportunities for Aspiring Startups',
+                'issuer' => 'DOST',
+                'date'   => 'September 02, 2026',
+                'file'   => '',
+                'image'  => asset('pdf_cert/startup.jpeg'),
+            ],
+            [
                 'title'  => 'Stay Alert, Stay Secure: Promoting Cyber Awareness',
                 'issuer' => 'CHED',
                 'date'   => 'July 23, 2026',
                 'file'   => 'pdf_cert/Cyberawareness.pdf',
                 'image'  => asset('pdf_cert/Cyberawareness.jpeg'),
-            ],
-            [
-                'title'  => 'Computer Systems Servicing NCII',
-                'issuer' => 'TESDA',
-                'date'   => 'November 08, 2025',
-                'file'   => 'pdf_cert/NC (1).pdf',
-                'image'  => asset('pdf_cert/NC2.jpeg'),
             ],
             [
                 'title'  => 'Online Safety Through Netiquette',
@@ -150,6 +164,12 @@ class PortfolioController extends Controller
                 'image'  => asset('pdf_cert/netiquette.jpeg'),
             ],
             [
+                'title'  => 'Civil Service Eligibility (CSE) — Professional Level',
+                'issuer' => 'Civil Service Commission (CSC)',
+                'date'   => 'March 08, 2026',
+                'file'   => '',
+            ],
+            [
                 'title'  => 'Data Analytics and Visualization Essentials',
                 'issuer' => 'DICT',
                 'date'   => 'December 11, 2025',
@@ -157,10 +177,11 @@ class PortfolioController extends Controller
                 'image'  => asset('pdf_cert/VisualizationEssentials.jpeg'),
             ],
             [
-                'title'  => 'Civil Service Eligibility (CSE) — Professional Level',
-                'issuer' => 'Civil Service Commission (CSC)',
-                'date'   => 'March 08, 2026',
-                'file'   => '',
+                'title'  => 'Computer Systems Servicing NCII',
+                'issuer' => 'TESDA',
+                'date'   => 'November 08, 2025',
+                'file'   => 'pdf_cert/NC (1).pdf',
+                'image'  => asset('pdf_cert/NC2.jpeg'),
             ],
         ];
     }
@@ -172,9 +193,9 @@ class PortfolioController extends Controller
                 'title'       => 'Holy Ghost School Online Information System',
                 'description' => 'A web-based information system designed to provide organized access to essential school information at Holy Ghost School. The system includes interfaces for viewing academic details, announcements, and other school-related content.',
                 'tech'        => ['Laravel', 'Tailwind CSS 3', 'MySQL'],
-                'image'       => asset('img/Holy ghost.png?v=2'),
+                'image'       => asset('img/Holy ghost.png?v=3'),
                 'demo'        => '#',
-                'repo'        => 'https://github.com/',
+                'repo'        => '',
                 'screenshots' => [
                     ['src' => asset('img/projects/portfolio.svg'), 'caption' => 'Home'],
                     ['src' => asset('img/projects/portfolio.svg'), 'caption' => 'About Section'],
@@ -186,11 +207,11 @@ class PortfolioController extends Controller
             ],
             [
                 'title'       => 'QR Code Based Event Attendance System',
-                'description' => 'An offline desktop-based attendance system designed to streamline event attendance tracking using QR codes. The system includes interfaces for managing student records, creating events, scanning QR codes, monitoring attendance, and generating attendance reports. It was developed to provide a faster and more organized way of recording attendance without requiring an internet connection.',
-                'tech'        => ['VB.NET'],
+                'description' => 'An online web-based attendance system designed to streamline event attendance tracking using QR codes. Developed using Laravel and PHP, the system provides features for managing student records, creating events, scanning QR codes, monitoring attendance, and generating attendance reports. It aims to provide a faster, more efficient, and organized way of recording and managing event attendance through an accessible online platform.',
+                'tech'        => ['Laravel', 'PHP'],
                 'image'       => asset('img/QRcode.png?v=2'),
                 'demo'        => '#',
-                'repo'        => 'https://github.com/',
+                'repo'        => 'https://github.com/criszlelaureta/qr_eventattendance.git',
                 'screenshots' => [
                     ['src' => asset('img/projects/smart-home.svg'), 'caption' => 'Dashboard'],
                     ['src' => asset('img/projects/smart-home.svg'), 'caption' => 'Sensor Data'],

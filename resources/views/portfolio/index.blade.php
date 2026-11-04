@@ -133,6 +133,14 @@
                                             @endforeach
                                         </ul>
                                     @endif
+
+                                    @if(!empty($project['repo']) && $project['repo'] !== 'https://github.com/')
+                                        <div style="margin-top: 1rem;">
+                                            <a class="btn btn--ghost btn--small" href="{{ $project['repo'] }}" target="_blank" rel="noopener noreferrer">
+                                                <x-icons.social name="github" /> View on GitHub
+                                            </a>
+                                        </div>
+                                    @endif
                                 </div>
 
                                 @if(!empty($project['image']))
@@ -267,10 +275,10 @@
                 title="What I bring to the table"
                 lead="A collection of certifications and training that reflect my continuous learning, developing skills, and commitment to personal and professional growth." />
 
-            <div class="certs">
+            <div class="certs more-certs">
                 <div class="certs-grid">
-                    @foreach($certifications as $cert)
-                        <article class="cert-card reveal">
+                    @foreach($certifications as $index => $cert)
+                        <article class="cert-card reveal{{ $index >= 3 ? ' more-certs__item' : '' }}">
                             @if(!empty($cert['image']))
                                 <a class="cert-card__img-btn" href="{{ $cert['image'] }}" data-cert-image="{{ $cert['image'] }}" aria-label="View {{ $cert['title'] }}">
                                     <img class="cert-card__img" src="{{ $cert['image'] }}" alt="{{ $cert['title'] }} certificate" loading="lazy">
@@ -286,6 +294,10 @@
                         </article>
                     @endforeach
                 </div>
+
+                <button type="button" class="btn btn--outline more-certs__toggle" aria-expanded="false">
+                    See More Certificates
+                </button>
             </div>
         </div>
     </section>

@@ -616,6 +616,14 @@ ul { list-style: none; margin: 0; padding: 0; }
     cursor: pointer;
 }
 
+.cert-card.more-certs__item { display: none; }
+.more-certs--open .cert-card.more-certs__item { display: flex; }
+.more-certs__toggle {
+    display: flex;
+    margin: 1.5rem auto 0;
+    cursor: pointer;
+}
+
 .timeline__media {
     border-radius: 10px;
     overflow: hidden;

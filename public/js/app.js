@@ -472,6 +472,28 @@
     }
 
     /* ============================================================
+       See More Certificates toggle
+       ============================================================ */
+    function initMoreCerts() {
+        var wrapper = doc.querySelector('.more-certs');
+        var toggle = wrapper && wrapper.querySelector('.more-certs__toggle');
+        if (!wrapper || !toggle) return;
+
+        toggle.addEventListener('click', function () {
+            var open = wrapper.classList.toggle('more-certs--open');
+            toggle.setAttribute('aria-expanded', String(open));
+
+            if (open) {
+                wrapper.querySelectorAll('.more-certs__item').forEach(function (el) {
+                    el.classList.add('visible');
+                });
+            }
+
+            toggle.textContent = open ? 'See Less Certificates' : 'See More Certificates';
+        });
+    }
+
+    /* ============================================================
        Back to top
        ============================================================ */
     function initBackToTop() {
@@ -504,6 +526,7 @@
         initGalleryModal();
         initShowcase();
         initMoreProjects();
+        initMoreCerts();
         initImageViewer('cert', 'data-cert-image');
         initImageViewer('project', 'data-project-image');
         initBackToTop();
