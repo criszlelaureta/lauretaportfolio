@@ -1,0 +1,14 @@
+/vendor
+/node_modules
+/.git
+/.github
+/.env
+/.env.*
+/tests
+/pdf_cert
+/images
+/Laureta_ePortfolio_Documentation.docx
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
