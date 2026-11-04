@@ -1,7 +1,7 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
     "version": 2,
-    "framework": null,
+    "framework": "vite",
     "installCommand": "env -u npm_config_cache_dir -u pnpm_config_cache_dir npm ci",
     "buildCommand": "env -u npm_config_cache_dir -u pnpm_config_cache_dir npm run build",
     "outputDirectory": "public",
