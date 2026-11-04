@@ -5,7 +5,7 @@
 
         <a href="#home" class="nav__brand" aria-label="{{ $profile['name'] ?? 'Renz Laureta' }}">
             <span class="nav__brand-mark">
-                <img src="{{ asset('img/nlogo.png') }}" alt="" class="nav__brand-logo" />
+                <img src="/img/nlogo.png" alt="" class="nav__brand-logo" />
             </span>
         </a>
 

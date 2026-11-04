@@ -5,7 +5,7 @@
 
         <div class="footer__brand">
             <a href="#home" class="footer__logo" aria-label="Criszle Laureta">
-                <img src="{{ asset('img/nlogo.png') }}" alt="Criszle Laureta" class="footer__logo-img" />
+                <img src="/img/nlogo.png" alt="Criszle Laureta" class="footer__logo-img" />
             </a>
             <p class="footer__name">{{ $profile['name'] ?? 'Criszle T. Laureta' }}<span class="footer__dot">.</span> <span class="footer__location">{{ $profile['location'] ?? '' }}</span></p>
         </div>

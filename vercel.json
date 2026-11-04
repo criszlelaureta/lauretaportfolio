@@ -15,8 +15,28 @@
     ],
     "routes": [
         {
-            "src": "/build/assets/(.*)",
-            "dest": "/public/build/assets/$1"
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
+        },
+        {
+            "src": "/css/(.*)",
+            "dest": "/public/css/$1"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/public/js/$1"
+        },
+        {
+            "src": "/img/(.*)",
+            "dest": "/public/img/$1"
+        },
+        {
+            "src": "/files/(.*)",
+            "dest": "/public/files/$1"
+        },
+        {
+            "src": "/pdf_cert/(.*)",
+            "dest": "/public/pdf_cert/$1"
         },
         {
             "src": "/favicon.(.*)",
@@ -36,8 +56,10 @@
         }
     ],
     "env": {
-        "APP_NAME": "Laravel Vercel",
+        "APP_NAME": "Criszle Laureta Portfolio",
+        "APP_ENV": "production",
         "APP_DEBUG": "false",
+        "APP_URL": "https://laureta-portfolio.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",

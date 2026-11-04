@@ -47,13 +47,13 @@
 
                     <div class="gallery-grid">
                         <button type="button" class="gallery-grid__item" data-gallery-index="0" aria-label="View profile image 1">
-                            <img src="{{ asset('img/nn.jpg') }}" alt="Profile photo" loading="lazy">
+                            <img src="/img/nn.jpg" alt="Profile photo" loading="lazy">
                         </button>
                         <button type="button" class="gallery-grid__item" data-gallery-index="1" aria-label="View profile image 2">
-                            <img src="{{ asset('img/profile.jpg') }}" alt="Profile photo" loading="lazy">
+                            <img src="/img/profile.jpg" alt="Profile photo" loading="lazy">
                         </button>
                         <button type="button" class="gallery-grid__item" data-gallery-index="2" aria-label="View profile image 3">
-                            <img src="{{ asset('img/pinning.jpg') }}" alt="Profile photo" loading="lazy">
+                            <img src="/img/pinning.jpg" alt="Profile photo" loading="lazy">
                         </button>
                     </div>
 
@@ -66,7 +66,7 @@
                     <p class="about__text" style="text-align: center; margin-top: -1rem;">{{ $profile['location'] }}</p>
 
                     <div style="text-align: center; margin-bottom: 2rem;">
-                        <a class="btn btn--primary" href="{{ asset('files/Laureta, Criszle Resume.pdf') }}" download="Laureta, Criszle Resume.pdf" style="display: inline-flex; align-items: center; gap: .5rem;">
+                        <a class="btn btn--primary" href="/files/Laureta, Criszle Resume.pdf" download="Laureta, Criszle Resume.pdf" style="display: inline-flex; align-items: center; gap: .5rem;">
                             <x-icons.icon name="download" />
                             Download Resume
                         </a>
@@ -284,7 +284,7 @@
                                     <img class="cert-card__img" src="{{ $cert['image'] }}" alt="{{ $cert['title'] }} certificate" loading="lazy">
                                 </a>
                             @elseif(!empty($cert['file']))
-                                <iframe class="cert-card__pdf" src="{{ asset($cert['file']) }}" title="{{ $cert['title'] }}" loading="lazy"></iframe>
+                                <iframe class="cert-card__pdf" src="{{ '/'.$cert['file'] }}" title="{{ $cert['title'] }}" loading="lazy"></iframe>
                             @else
                                 <span class="cert-card__icon"><x-icons.icon name="award" /></span>
                             @endif
